@@ -1,0 +1,3 @@
+requirments.txt
+
+standard python library 3.12.1
