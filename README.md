@@ -5,3 +5,4 @@ at app root folder run: python lab2weather.py
 
 
 enjoy
+and give Art good grades!
