@@ -49,20 +49,22 @@ def process_weather(data):
         # keeps weather records from being discarded"
         in zip(times, temperatures, precipitation)
     ]
-
+    #Creates an empty list that will store weather records that pass validation.#
     valid_records = []
+    #counts rejected records#
     rejected = 0
 
     for time, temp, rain in records:
         try:
+            #timestamp var called by pd to datetime tuple time with error exception#
             timestamp = pd.to_datetime(time, errors="raise")
-
+        #checks whether timestamp is missing#
             if pd.isna(timestamp):
                 raise ValueError("Missing timestamp")
-
+        #temperature and precipitation values from the weather API into floating-point numbers (float).
             temperature = float(temp)
             rainfall = float(rain)
-
+            #therwise#
             if not (
                 math.isfinite(temperature)
                 and math.isfinite(rainfall)
@@ -71,24 +73,24 @@ def process_weather(data):
 
             if rainfall < 0:
                 raise ValueError("Negative precipitation")
-
+            #adds a validated weather record#
             valid_records.append(
                 (timestamp, temperature, rainfall)
             )
-
+        #counts how many invalid weather records are encountered.#
         except (ValueError, TypeError, OverflowError):
             rejected += 1
-
+        #converts your list of valid weather records into a Pandas DataFrame#
     df = pd.DataFrame(
         valid_records,
         columns=["time", "temperature", "precipitation"]
     )
-
+#returns three values from your process_weather() function to call#
     return df, len(records), rejected
 
 
 def calculate_statistics(df):
-    """Calculate overall temperature and precipitation statistics."""
+    #Calculate overall temperature and precipitation statistics.#
 
     return {
         "minimum_temperature": float(df["temperature"].min()),
@@ -102,7 +104,8 @@ def calculate_statistics(df):
 
 
 def calculate_daily_statistics(df):
-    """Group records by date using a dictionary."""
+    #Group using a dictionary.defaultdict(list) creates an empty list when accessing#
+    # a nonexistent dictionary key#
 
     daily_records = defaultdict(list)
 
