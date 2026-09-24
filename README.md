@@ -7,7 +7,7 @@ Lab2 capstone prep Art Lobrin
 weather data aggregation app
 
 simply clone this repo
-at app root folder run: python lab2weather.py
+and at app root folder run: python lab2weather.py
 
 
 enjoy
