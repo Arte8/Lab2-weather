@@ -1,10 +1,12 @@
 requirements.txt
 
+libraries:
 standard python library 3.12.1
 requests
 pandas 
 json
 math
 
+dependencies:
 python -m pip install --user requests 
 
