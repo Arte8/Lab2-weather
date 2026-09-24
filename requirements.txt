@@ -1,10 +1,10 @@
 requirements.txt
 
 standard python library 3.12.1
+requests
+pandas 
+json
+math
 
 python -m pip install --user requests 
 
-import requests
-import pandas 
-import json
-import math
