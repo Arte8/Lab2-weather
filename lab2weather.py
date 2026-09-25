@@ -164,7 +164,7 @@ def save_summary(summary):
 
     
 def save_summary(summary):
-    # Save the weather summary to a UTF-8 JSON file.
+    # Save weather summary to JSON
 
     output_file = Path("weather_summary.json")
 
