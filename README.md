@@ -7,8 +7,8 @@ please install dependency with:
 Lab2 capstone prep Art Lobrin
 
 weather data aggregation app that gives data on average 
-temperature and total prcipitation for a given date, useful for 
-collecting data and determining patterns and historical reference.
+temperature and total precipitation for a given date, useful for 
+collecting data and determining patterns and as historical reference.
 
 simply clone this repo
 and at app root folder run:
