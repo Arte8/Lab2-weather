@@ -9,4 +9,4 @@ math
 
 dependencies:
 python -m pip install --user requests 
-
+python -m pip install requests pandas
