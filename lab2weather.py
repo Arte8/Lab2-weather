@@ -167,7 +167,7 @@ def save_summary(summary):
     with output_file.open("w", encoding="utf-8") as file:
         json.dump(summary, file, indent=2, allow_nan=False)
    
-       return output_file
+    return output_file
 
 
 def main():
