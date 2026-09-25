@@ -3,9 +3,9 @@ please install dependency with:
 (python -m pip install --user requests)
 (python -m pip install requests pandas)
 
-simply clone this repo:   clone lab2weather\Lab2-weather> python .\lab2weather.py
+simply clone this repo:   (clone lab2weather\Lab2-weather> python .\lab2weather.py)
 and at app root folder run:
-python lab2weather.py
+(python lab2weather.py)
 
 
 Lab2 capstone prep Art Lobrin
