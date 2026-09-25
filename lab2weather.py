@@ -136,16 +136,7 @@ def calculate_daily_statistics(df):
 
 
 def get_unique_dates(df):
-    """Use a set to identify unique dates in the dataset."""
-
-    unique_dates = {
-        timestamp.date().isoformat()
-        for timestamp in df["time"]
-    }
-
-    return sorted(unique_dates)
-
-"""Use a set to identify unique dates in the dataset."""
+    #set unique dates to time and sort#
 
     unique_dates = {
         timestamp.date().isoformat()
@@ -156,8 +147,7 @@ def get_unique_dates(df):
 
 
 def create_summary(url, df, downloaded, rejected):
-    """Combine the statistics and record counts into a summary."""
-
+    #summarize records from ...#
     return {
         "source_url": url,
         "records_downloaded": downloaded,
@@ -170,14 +160,14 @@ def create_summary(url, df, downloaded, rejected):
 
 
 def save_summary(summary):
-    """Save the weather summary to a UTF-8 JSON file."""
+    #Save the weather summary to a UTF-8 JSON file.
 
-    output_file = Path("weather_summary.json")
-
+   output_file = Path("weather_summary.json")
+   
     with output_file.open("w", encoding="utf-8") as file:
         json.dump(summary, file, indent=2, allow_nan=False)
-
-    return output_file
+   
+       return output_file
 
 
 def main():
