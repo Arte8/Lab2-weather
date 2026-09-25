@@ -199,11 +199,11 @@ def main():
         stats = summary["overall_statistics"]
 
         print("Minimum temperature:",
-              stats["minimum_temperature"], "°C")
+            stats["minimum_temperature"], "°C")
         print("Maximum temperature:",
-              stats["maximum_temperature"], "°C")
+            stats["maximum_temperature"], "°C")
         print("Mean temperature:",
-              stats["mean_temperature"], "°C")
+            stats["mean_temperature"], "°C")
 
         print("Minimum precipitation:",
               stats["minimum_precipitation"], "mm")
