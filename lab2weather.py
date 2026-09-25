@@ -162,12 +162,17 @@ def create_summary(url, df, downloaded, rejected):
 def save_summary(summary):
     #Save the weather summary to a UTF-8 JSON file.
 
-   output_file = Path("weather_summary.json")
-   
+    
+def save_summary(summary):
+    # Save the weather summary to a UTF-8 JSON file.
+
+    output_file = Path("weather_summary.json")
+
     with output_file.open("w", encoding="utf-8") as file:
         json.dump(summary, file, indent=2, allow_nan=False)
-   
+
     return output_file
+
 
 
 def main():
