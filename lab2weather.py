@@ -206,11 +206,11 @@ def main():
             stats["mean_temperature"], "°C")
 
         print("Minimum precipitation:",
-              stats["minimum_precipitation"], "mm")
+            stats["minimum_precipitation"], "mm")
         print("Maximum precipitation:",
-              stats["maximum_precipitation"], "mm")
+            stats["maximum_precipitation"], "mm")
         print("Mean precipitation:",
-              stats["mean_precipitation"], "mm")
+            stats["mean_precipitation"], "mm")
 
         print("\nDaily statistics:")
 
