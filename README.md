@@ -1,7 +1,7 @@
 # Lab2-weather
 please install dependency with:
-python -m pip install --user requests 
-python -m pip install requests pandas
+(python -m pip install --user requests)
+(python -m pip install requests pandas)
 
 
 Lab2 capstone prep Art Lobrin
