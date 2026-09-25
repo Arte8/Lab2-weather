@@ -145,6 +145,15 @@ def get_unique_dates(df):
 
     return sorted(unique_dates)
 
+"""Use a set to identify unique dates in the dataset."""
+
+    unique_dates = {
+        timestamp.date().isoformat()
+        for timestamp in df["time"]
+    }
+
+    return sorted(unique_dates)
+
 
 def create_summary(url, df, downloaded, rejected):
     """Combine the statistics and record counts into a summary."""
