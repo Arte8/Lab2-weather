@@ -158,10 +158,6 @@ def create_summary(url, df, downloaded, rejected):
         "daily_statistics": calculate_daily_statistics(df)
     }
 
-
-def save_summary(summary):
-    #Save the weather summary to a UTF-8 JSON file.
-
     
 def save_summary(summary):
     # Save weather summary to JSON
